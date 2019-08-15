@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.intro {
+    display: flex;
+}
+
+.therock {
+    width: 100%;
+}
+
+.trailer {
+    padding: 10px;
+    top: 0p
+}
+
+.map {
+    width: 400px;
+    padding: 10px;
+}
+
+.tapp.page2,
+.content__card.page2,
+.content__card.page3 {
+    opacity: 0;
+    display: none;
+}
+
+.content__card,
+.tapp {
+    transition: opacity 500ms linear;
+}
+
+.timer {
+    font-size: 30px;
+    text-align: center;
+}
+
+.button.teilnahme {
+    margin: 20px;
+}

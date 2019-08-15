@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://api.chayns.net/css/v4.2/">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="tapp page1">
+
+
+        <div class="tapp__content">
+
+            <div class="tapp__intro">
+                <h1 id="greeting">Willkommen!</h1>
+            </div>
+
+
+            <div class="content__card">
+                <img class="therock" src="images/theRock.jpeg">
+                <p>Sei einer von elf glücklichen Gewinnern, die zusammen mit Dwayne 'The Rock' Johnson die Premiere von "Fast & Furious: Hobbs & Shaw" live im Cinemy erleben!</p>
+                <div class='timer headline'>Einsendeschluss</div>
+                <p class='timer counter'>-----------------------------------</p>
+
+                <div style="text-align: center">
+                    <button class="button teilnahme">Anmelden</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="accordion" data-group="1">
+            <div class="accordion__head">
+                <div class="accordion__head__icon accordion--trigger">
+                    <i class="ts-angle-right"></i>
+                </div>
+                <div class="accordion__head__title  accordion--trigger">
+                    Mehr Infos
+                </div>
+            </div>
+            <div class="accordion__body film">
+
+                <div class="trailer"><iframe width="460" height="260" src="https://www.youtube.com/embed/3dw5e01banA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="accordion__item film">
+                    <p>Zwei Jahre nach den Ereignissen mit Cipher (Charlize Theron) in Fast & Furious 8 müssen sich der Bundesagent Luke Hobbs und der ehemalige britische Militärsoldat Deckard Shaw zusammenschließen, um dem mächtigen Super-Bösewicht Brixton
+                        (Idris Elba) das Handwerk zu legen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" data-group="1">
+            <div class="accordion__head">
+                <div class="accordion__head__icon accordion--trigger">
+                    <i class="ts-angle-right"></i>
+                </div>
+                <div class="accordion__head__title  accordion--trigger">
+                    Hier findest du uns
+                </div>
+            </div>
+            <div class="accordion__body" id="mapacc">
+                <div class="map"><iframe width="460px" height="300px" src="https://www.google.com/maps?width=400&amp;height=300&amp;hl=de&amp;q=Oldenkottpl 1+ +48683 Ahaus&amp;ie=UTF8&amp;t=&amp;z=19&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                <div style="text-align: center">
+                    <button class="button route">Zur Route</button>
+                    <button class="button call" id="mobileOnly">Anrufen</button>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="tapp page2">
+
+        <div class="tapp__intro">
+            <h1 class="headline">Kennst du the Rock wirklich?</h1>
+        </div>
+
+        <div class="tapp__content">
+            <div class="content__card page1">
+                <h2>Wie heißt the Rock mit richtigen Namen?</h2><br>
+                <p><input name="rbgName" type="radio" class="radio" id="radioName1" checked> <label for="radioName1">Robert downey</label></p>
+                <p><input name="rbgName" type="radio" class="radio" id="radioName2"> <label for="radioName2">Dwayne Johnson</label></p>
+                <p><input name="rbgName" type="radio" class="radio" id="radioName3"> <label for="radioName3">David Jackson</label></p>
+                <p><input name="rbgName" type="radio" class="radio" id="radioName4"> <label for="radioName4">The Rock</label></p><br>
+
+                <div style="text-align: center">
+                    <button class="button quest1" onclick="">weiter</button>
+                </div>
+            </div>
+
+
+
+            <div class="content__card page2">
+                <h2>Wie alt ist the Rock?</h2><br>
+                <p><input name="age" type="radio" class="radio" id="radioAge1" checked> <label for="radioAge1">37</label></p>
+                <p><input name="age" type="radio" class="radio" id="radioAge2"> <label for="radioAge2">40</label></p>
+                <p><input name="age" type="radio" class="radio" id="radioAge3"> <label for="radioAge3">44</label></p>
+                <p><input name="age" type="radio" class="radio" id="radioAge4"> <label for="radioAge4">47</label></p><br>
+
+                <div style="text-align: center">
+                    <button class="button quest2">weiter</button>
+                </div>
+            </div>
+
+            <div class="content__card page3">
+                <h2>In welchem Film hat the Rock nicht mitgespielt?</h2><br>
+                <p><input name="film" type="radio" class="radio" id="radioFilm1" checked> <label for="radioFilm1">Fast & Fourios</label></p>
+                <p><input name="film" type="radio" class="radio" id="radioFilm2"> <label for="radioFilm2">Baywatch</label></p>
+                <p><input name="film" type="radio" class="radio" id="radioFilm3"> <label for="radioFilm3">Jumanji</label></p>
+                <p><input name="film" type="radio" class="radio" id="radioFilm4"> <label for="radioFilm4">Stirb langsam</label></p><br>
+
+                <div style="text-align: center">
+                    <button class="button finished">weiter</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://api.chayns-static.space/css/v4/compatibility/compatibility.min.js" version="4.2"></script>
+    <script src="https://api.chayns-static.space/js/v4.0/chayns.min.js"></script>
+    <script src="https://api.chayns-static.space/ui/v4.0/chayns-ui.min.js"></script>
+    <script src="index.js" type='module'></script>
+</body>
+
+</html>
